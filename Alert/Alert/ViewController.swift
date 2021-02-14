@@ -16,6 +16,22 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func showAlert(_ sender: Any) {
+        let alert = UIAlertController(title: "ALERT!", message: "message!", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func showActionSheet(_ sender: Any) {
+        
+        
+    }
 }
 
